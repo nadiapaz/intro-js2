@@ -1,0 +1,46 @@
+<!-- En una página con muchas imágenes mostrar una alerta cuando esté
+cargado el DOM y otra después que las imágenes se hayan cargado.
+
+Tip: Investigar el evento window.onload
+
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+    </script>
+  </head>
+  <body>
+  	<p>El Evento load se dispara cuando el documento ha terminado de cargarse!</p>
+    <h1>Galería de imágenes "nadia"</h1>
+  	<div id="gallery" style=""> 
+  		<img src="frutillas.jpg">
+  		<img src="apple.jpg">
+  		<img src="beach.jpg">
+  		<img src="españa.jpg">
+  		<img src="amigas.jpg">
+      <img src="abeja.jpg">
+      <img src="corazon.jpg">
+      <img src="gato.jpg">
+      <img src="mascotas.jpg">
+      <img src="raton.jpg">
+      <img src="leona.jpg">
+      <img src="montaña.jpg">
+      <img src="buho.jpg">
+      <img src="cocodrilo.png">
+  	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script>
+$( document ).ready(function() {
+alert("The DOM load is ready")
+});
+$( window ).on( "load", function() {
+alert("The images are ready");
+});
+    </script>
+  </body>
+</html>

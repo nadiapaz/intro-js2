@@ -1,0 +1,56 @@
+<!-- Crear una galería de imágenes
+
+Todas las imágenes deben estar desaturada (en blanco y negro)
+ver: https://stackoverflow.com/questions/22994810/how-do-i-desaturate-and-saturate-an-image-using-css
+
+Al hacer click sobre la imágen esta debe recuperar su color con una transición
+de un segundo, al volver hacer click debe volver a estar en blanco y negro.
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+  	<div class="container">
+
+   <img src="fresas.jpg" alt="texto alternativo">
+
+   <img src="kiwi.jpg" alt="texto alternativo">
+
+   <img src="manzanas.jpg" alt="texto alternativo">
+
+   <img src="naranja.jpg" alt="texto alternativo">
+
+   <img src="piña.jpg" alt="texto alternativo">
+
+   <img src="platano.jpg" alt="texto alternativo">
+
+   <img src="tomates.jpg" alt="texto alternativo">
+
+   <img src="uvitas.jpg" alt="texto alternativo">
+
+   <img src="chirimoya.jpg" alt="texto alternativo">
+
+   <img src="pimenton.jpg" alt="texto alternativo">
+</div>
+
+<script type="text/javascript">
+
+$(function(){
+  $("img").on("click",function(){
+  $("img").toggleClass("clase")
+  });
+});
+		</script>
+
+  </body>
+</html>
